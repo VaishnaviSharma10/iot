@@ -1,0 +1,20 @@
+int redled;
+int greenled;
+int buzzer;
+int smoke=A0;
+int sensorThers=490;
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(redled,OUTPUT);
+  pinMode(greenled,OUTPUT);
+  pinMode(buzzer,OUTPUT);
+  pinMode(smoke,INPUT);
+ 
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  int analogSensor = digitalRead(smoke);
+  Serial.print(analogSensor);
+}
